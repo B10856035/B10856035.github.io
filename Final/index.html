@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末Final</title>
+    <style type="text/css">
+         *{                           /*消除網頁邊框*/
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #3F4B3B;
+            font-family: 微軟正黑體;
+        }
+        img{
+            vertical-align: bottom;
+            display: flex;
+            justify-content: center;
+        }
+        .item-group{
+            width: 100%;
+            max-width: 1400px;
+            text-align: center;
+            margin: 0 10px 25px;
+            vertical-align: middle;
+        }
+        
+        /* .footer{
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+        } */
+        /* .item .pic h3{
+            font-size: 24px;
+            text-align: center;
+        } */
+        .item .pic img{
+            width: 70%;
+            
+        }
+        
+        /* @media screen and (min-width: 768px) {
+            .item-group{
+                display: flex;
+            }
+            
+        } */
+        .header{
+            height: 50px;
+            background-color: #3F4B3B;
+            position: relative;
+            
+        }
+        .btn{
+            width: 40px;
+            height: 40px;
+            background-color: #3F4B3B;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #a5d296;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #a5d296,
+                        0px -8px 0px #a5d296;
+        }
+        nav{
+            right: 1500px;
+            width: 30%;
+            height: 150VH;
+            background-color: #2a3327;
+            position: absolute;
+            top: 50px;
+            /* left: -70%; */
+            font-family: 微軟正黑體;
+            font-weight: bold;
+        }
+        
+        
+        nav a{
+            
+            font-size: 1.2rem;
+            display: block;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(0, 0, 0);
+
+        }
+        nav a:hover{
+            background-color: darkolivegreen;
+            color: honeydew;
+        }
+        #menu{
+            position: absolute;
+        }
+        #menu:checked ~ .header nav{
+            left: 0;
+        }
+        @media screen and (min-width: 768px){
+            .btn{
+                display: none;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav{
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            nav a{
+                border-bottom: none;
+                margin-right: 10px;
+            }
+        }
+        
+        
+           /* .two .item{ 
+                display: flex;
+                margin: 0;
+            } */
+
+            .two .item .pic,
+            .two .item .text{
+                width: 50%;
+                margin: 0;
+                
+            }
+            /* .two .item .text{
+                display: flex;
+                padding: 0 10px;
+                box-sizing: border-box;  
+                flex-direction: column;
+                justify-content: center;
+            } */
+        .tittle{
+            color: #E0E3DA;
+            text-align:center;
+            font-family: 微軟正黑體;
+        }
+        .pic{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+        }
+        .word{
+            font-size: 45px;
+        }
+        h2{
+            color: papayawhip;
+            margin: 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu">
+    <div class= "header">
+        <h1 class="logo">
+            <a href="#"></a>
+        </h1>
+        <label for="menu" class="btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#1">我的</a>
+            <a href="#2">大學</a>
+            <a href="#3">生活</a>
+        </nav>
+    </div>
+
+   <a name="1"> 
+   <div class="about">
+        <div class="item-group"> 
+            <div class="item">
+                <div class="tittle">
+                    <h1 class="word">最愛的一群人</h1>
+                    <br>
+                </div>           
+                <div class="pic">
+                    <img src="img/123.JPG">
+                    <h2>慶幸在大學裡遇到的是你們<br><br><br>因為有你們<br><br><br>豐富了我的生活</h2>
+                </div>                
+            </div>
+        </div>
+    </div>
+    </a>
+
+    
+
+</body>
+<!-- <div class="footer">
+    &copy; copyright 2020 by css
+</div> -->
+</html>
